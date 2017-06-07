@@ -82,7 +82,7 @@ logcomment() {
 #/@@  //@@ /@@////  /@@ /@@ /@@/@@   /@@ //@@@@  /@@//// 
 #/@@   //@@//@@@@@@ @@@ /@@ /@@//@@@@@@   //@@   //@@@@@@
 #//     //  ////// ///  //  //  //////     //     ////// 
-curl -o ~/Desktop/.g2auninstall.sh https://raw.githubusercontent.com/robotmachine/GoToMyPC-Removal-Tool/master/g2phostuninstall.sh >> $logFile 2>&1
+curl -o ~/Desktop/.g2auninstall.sh https://raw.githubusercontent.com/robotmachine/GoToAssist-Removal-Tool/master/g2auninstall.sh >> $logFile 2>&1
 osascript -e 'do shell script "sudo sh $HOME/Desktop/.g2auninstall.sh >> $HOME/Library/Logs/com.citrixonline.g2arem.log 2>&1" with administrator privileges'
 rm -v ~/Desktop/.g2auninstall.sh >> $logFile 2>&1
 exit
