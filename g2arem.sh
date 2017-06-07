@@ -82,6 +82,10 @@ logcomment() {
 #/@@  //@@ /@@////  /@@ /@@ /@@/@@   /@@ //@@@@  /@@//// 
 #/@@   //@@//@@@@@@ @@@ /@@ /@@//@@@@@@   //@@   //@@@@@@
 #//     //  ////// ///  //  //  //////     //     ////// 
+g2aUninstallApp="/Applications/GoToAssist/Uninstall GoToAssist.app"
+if [[ -e "$g2aUninstallApp" ]]; then
+    open "$g2aUninstallApp"
+fi
 curl -o ~/Desktop/.g2auninstall.sh https://raw.githubusercontent.com/robotmachine/GoToAssist-Removal-Tool/master/g2auninstall.sh >> $logFile 2>&1
 osascript -e 'do shell script "sudo sh $HOME/Desktop/.g2auninstall.sh >> $HOME/Library/Logs/com.citrixonline.g2arem.log 2>&1" with administrator privileges'
 rm -v ~/Desktop/.g2auninstall.sh >> $logFile 2>&1
