@@ -18,7 +18,7 @@
 # /@@   //@@//@@@@@@ @@@ /@@ /@@//@@@@@@   //@@   //@@@@@@@@ @@@      /@@    //@@@@@@ //@@@@@@  @@@
 # //     //  ////// ///  //  //  //////     //     //////// ///       //      //////   //////  /// 
 #
-# GoToAssist Removal Tool v 1.0.0
+# GoToAssist Removal Tool v 1.0.1
 #
 # Description:
 # Removes GoToAssist Remote Support Unattended Support files
